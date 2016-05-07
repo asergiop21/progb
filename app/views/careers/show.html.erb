@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @career.name %>
+</p>
+
+
+<table>
+  <tr>
+    <th>Asignaturas</th>
+
+  </tr>
+
+<% @subjects.each do |subject| %>
+  <tr>
+       <td><%= subject.subject.name %></td>
+  </tr>
+
+<% end %>
+
+
+
+
+<%= link_to 'Edit', edit_career_path(@career) %> |
+<%= link_to 'Back', careers_path %>

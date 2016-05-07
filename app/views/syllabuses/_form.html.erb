@@ -1,0 +1,23 @@
+<%= simple_form_for @syllabus do |f| %>
+  <% if @syllabus.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@syllabus.errors.count, "error") %> prohibited this syllabus from being saved:</h2>
+
+      <ul>
+      <% @syllabus.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+  
+      <%= f.input :career_id, collection: select_careers%>
+      <%= f.input :subject_id, collection: select_subject%>
+    <%=f.input :year  %>
+    <%= f.input :quarter %>
+    
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,48 @@
+<header class="container">
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#acollapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+    <!--<ul class="nav navbar-nav navbar-right">-->
+
+    <div id ="acollapse" class="collapse navbar-collapse" >
+      <a href="." class="navbar-brand">Linecodex</a>
+      <ul class="nav navbar-nav  ">
+
+      <li><%= link_to "Students", students_path %></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Administración<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+          <li class="nav"><%= link_to "Carreras", careers_path %></li>
+          <li class="nav"><%= link_to "Profesores", teachers_path %></li>
+          <li class="nav"><%= link_to "Asignatura", subjects_path %></li>
+          <li class="nav"><%= link_to "Correlatividad", syllabuses_path %></li>
+          </ul>
+      </ul>
+
+      <ul class="nav navbar-nav pull-right">
+
+        <li class="nav" ><%= link_to "Cerrar Session", destroy_user_session_path, method: :delete %></li>
+
+      </ul>
+    </div>
+
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+

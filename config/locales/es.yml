@@ -1,0 +1,19 @@
+es:
+  activerecord:
+    
+    models:
+    attributes:
+      student:
+        name: Nombre
+        lastname: Apellido
+        age: Años
+        dni: DNI
+        birthdate: Fecha de Nacimiento
+        address: Dirección
+        phone: Telefono
+        note: Observaciones
+  helpers:
+    create: "Crear %{model}"
+    submit: "Guardar111 %{model}"
+    update: "Actualizar %{model}"
+
